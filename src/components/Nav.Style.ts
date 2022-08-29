@@ -3,16 +3,17 @@ import styled from "styled-components";
 export const NavBox = styled.div`
   display: flex;
   background-color: black;
-  padding: 15px;
-  ul {
-    justify-content: center;
-    gap: 50px;
-    display: flex;
-    width: 100%;
-    text-decoration: none;
-    li {
-      color: white;
-      list-style: none;
-    }
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  padding: 10px;
+  div {
+    color: #888;
+  }
+  img {
+    height: 95%;
   }
 `;
