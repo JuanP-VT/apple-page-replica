@@ -8,4 +8,5 @@ export const AppContainer = styled.div`
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0;
   margin: 0;
+  position: relative;
 `;
