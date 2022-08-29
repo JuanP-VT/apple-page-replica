@@ -1,7 +1,8 @@
 import React from "react";
+import { AppContainer } from "./components/App.Style";
 
 function App() {
-  return <div className="App">React</div>;
+  return <AppContainer></AppContainer>;
 }
 
 export default App;
