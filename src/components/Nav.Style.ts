@@ -14,6 +14,6 @@ export const NavBox = styled.div`
     color: #888;
   }
   img {
-    height: 95%;
+    height: 80%;
   }
 `;
