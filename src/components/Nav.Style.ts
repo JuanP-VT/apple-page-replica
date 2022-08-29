@@ -8,10 +8,14 @@ export const NavBox = styled.div`
   justify-content: center;
   display: flex;
   width: 100%;
-  gap: 40px;
+  gap: 60px;
   padding: 10px;
   div {
-    color: #888;
+    display: flex;
+    gap: 40px;
+    p {
+      color: #888;
+    }
   }
   img {
     height: 80%;

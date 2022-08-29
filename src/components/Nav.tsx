@@ -7,14 +7,16 @@ function Nav() {
   return (
     <NavBox>
       <img src={logo} alt="logo" />
-      <div>PC</div>
-      <div>Console</div>
-      <div>Mobile</div>
-      <div>Lifestyle</div>
-      <div> Services</div>
-      <div>Community</div>
-      <div>Support</div>
-      <div>Store</div>
+      <div>
+        <p>PC</p>
+        <p>Console</p>
+        <p>Mobile</p>
+        <p>Lifestyle</p>
+        <p> Services</p>
+        <p>Community</p>
+        <p>Support</p>
+        <p>Store</p>
+      </div>
       <FontAwesomeIcon icon={faSearch} />
       <FontAwesomeIcon icon={faShoppingCart} />
     </NavBox>
