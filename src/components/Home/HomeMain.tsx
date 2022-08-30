@@ -3,21 +3,33 @@ import ArrowLink from "./ArrowLink";
 import { HomeMainContainer } from "./Home.style";
 type Props = {
   backgroundImg: string;
+  headerText: string;
+  contentText: string;
+  linkOneTextContent: string;
+  linkOneHref: string;
+  linkTwoTextContent?: string;
+  linkTwoHref?: string;
 };
-function HomeMain({ backgroundImg }: Props) {
+function HomeMain({
+  backgroundImg,
+  headerText,
+  contentText,
+  linkOneTextContent,
+  linkOneHref,
+  linkTwoTextContent,
+  linkTwoHref,
+}: Props) {
   return (
     <HomeMainContainer backgroundImg={backgroundImg}>
-      <h1>RAZER BASILISK V3 PRO</h1>
-      <h3>OUR MOST ADVANCED GAMING MOUSE YET</h3>
+      <h1>{headerText}</h1>
+      <h3>{contentText}</h3>
       <div className="links">
-        <ArrowLink
-          href="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro"
-          textContent="Learn More"
-        />
-        <ArrowLink
-          href="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro/select-your-model"
-          textContent="Buy"
-        />
+        <ArrowLink href={linkOneHref} linkTextContent={linkOneTextContent} />
+        {linkTwoTextContent === undefined ? (
+          ""
+        ) : (
+          <ArrowLink href={linkTwoHref} linkTextContent={linkTwoTextContent} />
+        )}
       </div>
     </HomeMainContainer>
   );

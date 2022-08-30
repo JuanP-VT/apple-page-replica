@@ -6,9 +6,29 @@ function Home() {
   return (
     <HomeWrapper>
       <section>
-        <HomeMain backgroundImg={HomeImageOne} />
-        <HomeMain backgroundImg="" />
-        <HomeMain backgroundImg="" />
+        <HomeMain
+          backgroundImg={HomeImageOne}
+          headerText="RAZER BASILISK V3 PRO"
+          contentText="OUR MOST ADVANCED GAMING MOUSE YET"
+          linkOneTextContent="Learn More"
+          linkOneHref="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro"
+          linkTwoTextContent="Buy"
+          linkTwoHref="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro/select-your-model"
+        />
+        <HomeMain
+          backgroundImg={HomeImageOne}
+          headerText=""
+          contentText=""
+          linkOneTextContent=""
+          linkOneHref=""
+        />
+        <HomeMain
+          backgroundImg={HomeImageOne}
+          headerText=""
+          contentText=""
+          linkOneTextContent=""
+          linkOneHref=""
+        />
       </section>
       <section></section>
     </HomeWrapper>

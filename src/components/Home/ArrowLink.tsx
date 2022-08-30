@@ -2,11 +2,11 @@ import React from "react";
 import { ArrowLinkStyle } from "./Home.style";
 
 type Props = {
-  href: string;
-  textContent: string;
+  href?: string;
+  linkTextContent?: string;
 };
 
-function ArrowLink({ textContent, href }: Props) {
+function ArrowLink({ linkTextContent: textContent, href }: Props) {
   return (
     <ArrowLinkStyle
       href={href}

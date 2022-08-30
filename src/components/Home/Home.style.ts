@@ -4,7 +4,6 @@ export const HomeWrapper = styled.div`
   display: flex;
   margin-top: 60px;
 `;
-
 type Props = {
   backgroundImg: string;
 };
@@ -32,7 +31,6 @@ export const HomeMainContainer = styled.div<Props>`
     gap: 70px;
   }
 `;
-
 export const ArrowLinkStyle = styled.a`
   text-decoration: none;
   font-size: 1.3rem;
