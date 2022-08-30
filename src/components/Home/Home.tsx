@@ -1,7 +1,12 @@
 import React from "react";
-
+import { HomeWrapper } from "./Home.style";
 function Home() {
-  return <div>Home</div>;
+  return (
+    <HomeWrapper>
+      <section></section>
+      <section></section>
+    </HomeWrapper>
+  );
 }
 
 export default Home;
