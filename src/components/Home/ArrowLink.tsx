@@ -16,7 +16,8 @@ function ArrowLink({ linkTextContent: textContent, href }: Props) {
         );
       }}
     >
-      {textContent}
+      <p>{textContent}</p>
+      <span></span>
     </ArrowLinkStyle>
   );
 }
