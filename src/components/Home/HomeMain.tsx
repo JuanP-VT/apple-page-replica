@@ -1,9 +1,11 @@
 import React from "react";
 import { ArrowLink, HomeMainContainer } from "./Home.style";
-
-function HomeMain() {
+type Props = {
+  backgroundImg: string;
+};
+function HomeMain({ backgroundImg }: Props) {
   return (
-    <HomeMainContainer>
+    <HomeMainContainer backgroundImg={backgroundImg}>
       <h1>RAZER BASILISK V3 PRO</h1>
       <h3>OUR MOST ADVANCED GAMING MOUSE YET</h3>
       <div className="links">

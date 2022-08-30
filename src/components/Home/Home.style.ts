@@ -5,7 +5,10 @@ export const HomeWrapper = styled.div`
   margin-top: 60px;
 `;
 
-export const HomeMainContainer = styled.div`
+type Props = {
+  backgroundImg: string;
+};
+export const HomeMainContainer = styled.div<Props>`
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -14,14 +17,15 @@ export const HomeMainContainer = styled.div`
   align-items: center;
   padding-top: 50px;
   color: white;
-  h1 {
-    font-size: 3rem;
-    font-weight: 900;
-    margin-bottom: 10px;
-  }
+  background-image: url(${(props) => props.backgroundImg});
+  background-position: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  position: relative;
   h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    font-weight: 300;
   }
   .links {
     display: flex;
@@ -34,6 +38,10 @@ export const ArrowLink = styled.a`
   font-size: 1.3rem;
   color: white;
   position: relative;
+  font-weight: 300;
+  &:hover {
+    border-bottom: 1px solid white;
+  }
   &::after {
     position: absolute;
     top: 0;
