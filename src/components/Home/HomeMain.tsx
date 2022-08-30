@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeMainContainer } from "./Home.style";
+import { ArrowLink, HomeMainContainer } from "./Home.style";
 
 function HomeMain() {
   return (
@@ -7,7 +7,7 @@ function HomeMain() {
       <h1>RAZER BASILISK V3 PRO</h1>
       <h3>OUR MOST ADVANCED GAMING MOUSE YET</h3>
       <div className="links">
-        <a
+        <ArrowLink
           href="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro"
           onClick={() => {
             alert(
@@ -16,8 +16,8 @@ function HomeMain() {
           }}
         >
           Learn More
-        </a>
-        <a
+        </ArrowLink>
+        <ArrowLink
           href="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro/select-your-model"
           onClick={() => {
             alert(
@@ -26,7 +26,7 @@ function HomeMain() {
           }}
         >
           Buy
-        </a>
+        </ArrowLink>
       </div>
     </HomeMainContainer>
   );

@@ -22,7 +22,6 @@ export const NavBox = styled.div<Props>`
     cursor: pointer;
     p {
       color: #888;
-      font-family: "Roboto", sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 19px;
