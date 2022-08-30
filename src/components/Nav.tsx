@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBox } from "./Nav.Style";
+import { NavBox, NavLinkList } from "./Nav.Style";
 import logo from "../img/homeIMG/razer-ths-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
@@ -7,7 +7,7 @@ function Nav() {
   return (
     <NavBox>
       <img src={logo} alt="logo" />
-      <div>
+      <NavLinkList>
         <p>PC</p>
         <p>Console</p>
         <p>Mobile</p>
@@ -16,7 +16,7 @@ function Nav() {
         <p>Community</p>
         <p>Support</p>
         <p>Store</p>
-      </div>
+      </NavLinkList>
       <FontAwesomeIcon icon={faShoppingCart} />
     </NavBox>
   );
