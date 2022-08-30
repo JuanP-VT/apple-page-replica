@@ -1,5 +1,6 @@
 import React from "react";
-import { ArrowLink, HomeMainContainer } from "./Home.style";
+import ArrowLink from "./ArrowLink";
+import { HomeMainContainer } from "./Home.style";
 type Props = {
   backgroundImg: string;
 };
@@ -11,24 +12,12 @@ function HomeMain({ backgroundImg }: Props) {
       <div className="links">
         <ArrowLink
           href="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro"
-          onClick={() => {
-            alert(
-              "You are leaving this page replica!, now heading to Razer original site"
-            );
-          }}
-        >
-          Learn More
-        </ArrowLink>
+          textContent="Learn More"
+        />
         <ArrowLink
           href="https://www.razer.com/gaming-mice/razer-basilisk-v3-pro/select-your-model"
-          onClick={() => {
-            alert(
-              "You are leaving this page replica!, now heading to Razer original site"
-            );
-          }}
-        >
-          Buy
-        </ArrowLink>
+          textContent="Buy"
+        />
       </div>
     </HomeMainContainer>
   );

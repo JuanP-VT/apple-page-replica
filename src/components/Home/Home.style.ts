@@ -33,7 +33,7 @@ export const HomeMainContainer = styled.div<Props>`
   }
 `;
 
-export const ArrowLink = styled.a`
+export const ArrowLinkStyle = styled.a`
   text-decoration: none;
   font-size: 1.3rem;
   color: white;
