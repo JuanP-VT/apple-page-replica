@@ -1,6 +1,6 @@
 import React from "react";
 import { NavBox } from "./Nav.Style";
-import logo from "../img/homeIMG/razer-ths-logo.svg";
+import logo from "../../img/homeIMG/razer-ths-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 type Props = {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { AppContainer } from "./components/App.Style";
-import Nav from "./components/Nav";
+import { AppContainer } from "./components/Nav/App.Style";
+import Nav from "./components/Nav/Nav";
 import { GlobalStyle } from "./GlobalStyle";
 
 function App() {
