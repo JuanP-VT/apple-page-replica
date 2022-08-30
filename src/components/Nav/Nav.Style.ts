@@ -13,6 +13,7 @@ export const NavBox = styled.div<Props>`
   padding: 10px;
   position: fixed;
   border-bottom: 2px solid green;
+  z-index: 10;
   #barsMenu {
     display: none;
   }

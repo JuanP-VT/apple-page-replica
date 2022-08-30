@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const HomeWrapper = styled.div`
   display: flex;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  section {
+    width: 100%;
+  }
 `;
 type Props = {
   backgroundImg: string;
@@ -10,7 +15,7 @@ type Props = {
 export const HomeMainContainer = styled.div<Props>`
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   border: 1px solid green;
   height: 600px;
   align-items: center;
