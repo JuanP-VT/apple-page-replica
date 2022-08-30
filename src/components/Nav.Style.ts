@@ -1,5 +1,5 @@
 import styled from "styled-components";
-type Props = {};
+
 export const NavBox = styled.div`
   display: flex;
   background-color: black;
@@ -10,7 +10,17 @@ export const NavBox = styled.div`
   gap: 60px;
   padding: 10px;
   position: fixed;
-
+  #NavLinkList {
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+    p {
+      color: #888;
+      &:hover {
+        color: white;
+      }
+    }
+  }
   img {
     height: 80%;
     cursor: pointer;
@@ -21,18 +31,6 @@ export const NavBox = styled.div`
     &:hover {
       color: white;
       cursor: pointer;
-    }
-  }
-`;
-
-export const NavLinkList = styled.div`
-  display: flex;
-  gap: 40px;
-  cursor: pointer;
-  p {
-    color: #888;
-    &:hover {
-      color: white;
     }
   }
 `;
