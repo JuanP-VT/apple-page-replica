@@ -16,8 +16,7 @@ export const HomeMainContainer = styled.div<Props>`
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid green;
-  height: 600px;
+  height: 700px;
   align-items: center;
   padding-top: 50px;
   color: white;
@@ -26,6 +25,7 @@ export const HomeMainContainer = styled.div<Props>`
   font-size: 2.5rem;
   font-weight: 900;
   position: relative;
+  border-bottom: 10px solid rgb(50, 50, 50);
   h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -42,18 +42,23 @@ export const ArrowLinkStyle = styled.a`
   color: white;
   position: relative;
   font-weight: 300;
-  &:hover {
-    border-bottom: 1px solid white;
+  p {
+    display: inline;
   }
-  &::after {
-    position: absolute;
-    top: 0;
-    content: " >";
-    font-family: "Roboto", sans-serif;
-    margin-left: 5px;
-    color: #44d62c;
-    font-weight: 500;
-    font-size: 16px;
-    padding-bottom: 50px;
+  &:hover {
+    p {
+      border-bottom: 1px solid white;
+    }
+  }
+  span {
+    &::after {
+      content: ">";
+      font-family: "Roboto", sans-serif;
+      margin-left: 7px;
+      color: #44d62c;
+      font-weight: 300;
+      font-size: 20px;
+      padding-bottom: 50px;
+    }
   }
 `;
