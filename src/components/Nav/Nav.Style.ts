@@ -5,35 +5,42 @@ type Props = {
 export const NavBox = styled.div<Props>`
   display: flex;
   background-color: black;
-  height: 50px;
+  height: 60px;
   align-items: center;
   justify-content: center;
   width: 100%;
   gap: 60px;
   padding: 10px;
   position: fixed;
+  border-bottom: 2px solid green;
   #barsMenu {
     display: none;
   }
   #NavLinkList {
     display: flex;
-    gap: 40px;
+    gap: 80px;
     cursor: pointer;
     p {
       color: #888;
       font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 19px;
+      padding-top: 5px;
+      white-space: nowrap;
       &:hover {
         color: white;
       }
     }
   }
   img {
-    height: 80%;
+    height: 90%;
     cursor: pointer;
   }
   svg {
     height: 40%;
     color: #888;
+    padding-top: 5px;
     &:hover {
       color: white;
       cursor: pointer;
