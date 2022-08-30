@@ -21,8 +21,7 @@ export const NavBox = styled.div<Props>`
     cursor: pointer;
     p {
       color: #888;
-      font-family: razerf5thin;
-      font-weight: 100;
+      font-family: "Roboto", sans-serif;
       &:hover {
         color: white;
       }
