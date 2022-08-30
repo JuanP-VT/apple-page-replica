@@ -2,10 +2,19 @@ import React from "react";
 import { NavBox } from "./Nav.Style";
 import logo from "../img/homeIMG/razer-ths-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-function Nav() {
+import { faBars, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+type Props = {
+  NavIsToggled: boolean;
+  setNavIsToggled: React.Dispatch<React.SetStateAction<boolean>>;
+};
+function Nav({ NavIsToggled, setNavIsToggled }: Props) {
   return (
-    <NavBox>
+    <NavBox NavIsToggled={NavIsToggled}>
+      <FontAwesomeIcon
+        icon={faBars}
+        id="barsMenu"
+        onClick={() => setNavIsToggled(!NavIsToggled)}
+      />
       <img src={logo} alt="logo" />
       <div id="NavLinkList">
         <p>PC</p>
