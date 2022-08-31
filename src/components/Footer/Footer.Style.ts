@@ -2,12 +2,10 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   background-color: #111;
-  height: 500px;
   display: flex;
   justify-content: center;
   .content {
     width: 70%;
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
   }
@@ -15,18 +13,18 @@ export const FooterContainer = styled.div`
     height: 90%;
     display: flex;
     position: relative;
+    border-bottom: 1px solid rgb(50, 50, 50);
   }
   .links {
-    width: 80%;
-    outline: 1px solid green;
+    width: 60%;
     display: flex;
+    justify-content: space-between;
     @media (max-width: 780px) {
       flex-direction: column;
     }
   }
   .forGamers {
-    outline: 1px solid green;
-    width: 20%;
+    width: 40%;
   }
   .legal {
     height: 10%;
@@ -39,13 +37,15 @@ type FooterMenuProps = {
 export const FooterMenuContainer = styled.div<FooterMenuProps>`
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 7px;
   font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 20px;
   span {
     color: #fff;
     cursor: pointer;
-    margin-bottom: 20px;
     pointer-events: none;
+    padding: 10px;
     @media (max-width: 780px) {
       pointer-events: all;
     }
@@ -53,10 +53,12 @@ export const FooterMenuContainer = styled.div<FooterMenuProps>`
   ul {
     list-style: none;
     display: ${(props) => (props.ListIsToggled ? "inline" : "none")};
+
     a {
       color: #999;
       display: block;
       text-decoration: none;
+      padding: 7px;
     }
   }
 `;
