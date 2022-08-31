@@ -60,42 +60,114 @@ function FooterMenu({
       <span onClick={() => setListIsToggled(!ListIsToggled)}>{label}</span>
       <ul>
         {linkOneText !== undefined ? (
-          <a href={linkOneHref}>{linkOneText}</a>
+          <a
+            onClick={() => {
+              alert(
+                "You are leaving this page replica!, now heading to Razer original site"
+              );
+            }}
+            href={linkOneHref}
+          >
+            {linkOneText}
+          </a>
         ) : (
           ""
         )}
         {linkTwoText !== undefined ? (
-          <a href={linkTwoHref}>{linkTwoText}</a>
+          <a
+            onClick={() => {
+              alert(
+                "You are leaving this page replica!, now heading to Razer original site"
+              );
+            }}
+            href={linkTwoHref}
+          >
+            {linkTwoText}
+          </a>
         ) : (
           ""
         )}
         {linkThreeText !== undefined ? (
-          <a href={linkThreeHref}>{linkThreeText}</a>
+          <a
+            onClick={() => {
+              alert(
+                "You are leaving this page replica!, now heading to Razer original site"
+              );
+            }}
+            href={linkThreeHref}
+          >
+            {linkThreeText}
+          </a>
         ) : (
           ""
         )}
         {linkFourText !== undefined ? (
-          <a href={linkFourHref}>{linkFourText}</a>
+          <a
+            onClick={() => {
+              alert(
+                "You are leaving this page replica!, now heading to Razer original site"
+              );
+            }}
+            href={linkFourHref}
+          >
+            {linkFourText}
+          </a>
         ) : (
           ""
         )}
         {linkFiveText !== undefined ? (
-          <a href={linkFiveHref}>{linkFiveText}</a>
+          <a
+            onClick={() => {
+              alert(
+                "You are leaving this page replica!, now heading to Razer original site"
+              );
+            }}
+            href={linkFiveHref}
+          >
+            {linkFiveText}
+          </a>
         ) : (
           ""
         )}
         {linkSixText !== undefined ? (
-          <a href={linkSixHref}>{linkSixText}</a>
+          <a
+            onClick={() => {
+              alert(
+                "You are leaving this page replica!, now heading to Razer original site"
+              );
+            }}
+            href={linkSixHref}
+          >
+            {linkSixText}
+          </a>
         ) : (
           ""
         )}
         {linkSevenText !== undefined ? (
-          <a href={linkSevenHref}>{linkSevenText}</a>
+          <a
+            onClick={() => {
+              alert(
+                "You are leaving this page replica!, now heading to Razer original site"
+              );
+            }}
+            href={linkSevenHref}
+          >
+            {linkSevenText}
+          </a>
         ) : (
           ""
         )}
         {linkEightText !== undefined ? (
-          <a href={linkEightHref}>{linkEightText}</a>
+          <a
+            onClick={() => {
+              alert(
+                "You are leaving this page replica!, now heading to Razer original site"
+              );
+            }}
+            href={linkEightHref}
+          >
+            {linkEightText}
+          </a>
         ) : (
           ""
         )}
