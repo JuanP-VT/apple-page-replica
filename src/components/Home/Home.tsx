@@ -10,6 +10,7 @@ import HomeImageSix from "../../img/homeIMG/HomeSix.jpg";
 import HomeImageSeven from "../../img/homeIMG/HomeSeven.jpg";
 import HomeImageEight from "../../img/homeIMG/HomeEigth.jpg";
 import HomeImageNine from "../../img/homeIMG/HomeNine.jpg";
+import Footer from "../Footer/Footer";
 
 function Home() {
   return (
@@ -91,6 +92,7 @@ function Home() {
           linkOneHref="https://gold.razer.com/gold/promotions/genshinimpact-version3-phase1?utm_source=website&utm_medium=organic&utm_campaign=GLOBAL_RG_240822_GenshinImpactV3.0_Aug22&utm_content=aug_razercom_rg_promo&_gl=1*18zq4qf*_ga*OTQ3MzIxOTkuMTY2MTc5NTcxMg..*_ga_3TRK53PM75*MTY2MTkwNjQ2Mi45LjEuMTY2MTkwODA2My41NS4wLjA.&_ga=2.98435671.952502628.1661795712-94732199.1661795712"
         />
       </section>
+      <Footer />
     </HomeWrapper>
   );
 }
