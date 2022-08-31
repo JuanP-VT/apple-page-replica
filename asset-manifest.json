@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/razer-page-replica/static/js/main.d4aee0f6.js",
+    "static/media/HomeSeven.jpg": "/razer-page-replica/static/media/HomeSeven.a898110eea738111636a.jpg",
+    "static/media/HomeTwo.jpg": "/razer-page-replica/static/media/HomeTwo.5a176872cd62999426f0.jpg",
+    "static/media/HomeOne.jpg": "/razer-page-replica/static/media/HomeOne.79043eadfe4ead22b074.jpg",
+    "static/media/HomeNine.jpg": "/razer-page-replica/static/media/HomeNine.ae98977f805c0ff9d91d.jpg",
+    "static/media/HomeThree.jpg": "/razer-page-replica/static/media/HomeThree.6900deb5d2186a108110.jpg",
+    "static/media/HomeEigth.jpg": "/razer-page-replica/static/media/HomeEigth.934f9b1a9d52fec45ba1.jpg",
+    "static/media/HomeFour.jpg": "/razer-page-replica/static/media/HomeFour.829ce4e2051d275a733a.jpg",
+    "static/media/HomeFive.jpg": "/razer-page-replica/static/media/HomeFive.ee920a0a111109d59c1e.jpg",
+    "static/media/HomeSix.jpg": "/razer-page-replica/static/media/HomeSix.334e9e4b6747f9099606.jpg",
+    "static/media/razer-ths-logo.svg": "/razer-page-replica/static/media/razer-ths-logo.0d25071aa9e861bf55d7f240475a2ff1.svg",
+    "index.html": "/razer-page-replica/index.html",
+    "main.d4aee0f6.js.map": "/razer-page-replica/static/js/main.d4aee0f6.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d4aee0f6.js"
+  ]
+}
