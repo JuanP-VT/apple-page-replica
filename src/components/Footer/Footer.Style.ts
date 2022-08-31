@@ -19,6 +19,7 @@ export const FooterContainer = styled.div`
   .links {
     width: 80%;
     outline: 1px solid green;
+    display: flex;
   }
   .forGamers {
     outline: 1px solid green;
@@ -26,5 +27,23 @@ export const FooterContainer = styled.div`
   }
   .legal {
     height: 10%;
+  }
+`;
+
+export const FooterMenuContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 12px;
+  span {
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style: none;
+    li {
+      color: #999;
+    }
   }
 `;
