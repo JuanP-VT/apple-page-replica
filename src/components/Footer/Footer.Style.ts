@@ -53,8 +53,10 @@ export const FooterMenuContainer = styled.div<FooterMenuProps>`
   ul {
     list-style: none;
     display: ${(props) => (props.ListIsToggled ? "inline" : "none")};
-    li {
+    a {
       color: #999;
+      display: block;
+      text-decoration: none;
     }
   }
 `;

@@ -1,7 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { FooterMenuContainer } from "./Footer.Style";
+type Props = {
+  label: string;
+  linkOneText?: string;
+  linkOneHref?: string;
+  linkTwoText?: string;
+  linkTwoHref?: string;
+  linkThreeText?: string;
+  linkThreeHref?: string;
+  linkFourText?: string;
+  linkFourHref?: string;
+  linkFiveText?: string;
+  linkFiveHref?: string;
+  linkSixText?: string;
+  linkSixHref?: string;
+  linkSevenText?: string;
+  linkSevenHref?: string;
+  linkEightText?: string;
+  linkEightHref?: string;
+};
 
-function FooterMenu() {
+function FooterMenu({
+  label,
+  linkEightHref,
+  linkEightText,
+  linkFiveHref,
+  linkFiveText,
+  linkFourHref,
+  linkFourText,
+  linkOneHref,
+  linkOneText,
+  linkSevenHref,
+  linkSevenText,
+  linkSixHref,
+  linkSixText,
+  linkThreeHref,
+  linkThreeText,
+  linkTwoHref,
+  linkTwoText,
+}: Props) {
   // This state will save if list item is active
   const [ListIsToggled, setListIsToggled] = useState(true);
   //This hook will handle an event that changes the ListIsToggled state to
@@ -20,13 +57,48 @@ function FooterMenu() {
   }, []);
   return (
     <FooterMenuContainer ListIsToggled={ListIsToggled}>
-      <span onClick={() => setListIsToggled(!ListIsToggled)}>Shop</span>
+      <span onClick={() => setListIsToggled(!ListIsToggled)}>{label}</span>
       <ul>
-        <li>Op1</li>
-        <li>Op2</li>
-        <li>Op3</li>
-        <li>Op4</li>
-        <li>Op5</li>
+        {linkOneText !== undefined ? (
+          <a href={linkOneHref}>{linkOneText}</a>
+        ) : (
+          ""
+        )}
+        {linkTwoText !== undefined ? (
+          <a href={linkTwoHref}>{linkTwoText}</a>
+        ) : (
+          ""
+        )}
+        {linkThreeText !== undefined ? (
+          <a href={linkThreeHref}>{linkThreeText}</a>
+        ) : (
+          ""
+        )}
+        {linkFourText !== undefined ? (
+          <a href={linkFourHref}>{linkFourText}</a>
+        ) : (
+          ""
+        )}
+        {linkFiveText !== undefined ? (
+          <a href={linkFiveHref}>{linkFiveText}</a>
+        ) : (
+          ""
+        )}
+        {linkSixText !== undefined ? (
+          <a href={linkSixHref}>{linkSixText}</a>
+        ) : (
+          ""
+        )}
+        {linkSevenText !== undefined ? (
+          <a href={linkSevenHref}>{linkSevenText}</a>
+        ) : (
+          ""
+        )}
+        {linkEightText !== undefined ? (
+          <a href={linkEightHref}>{linkEightText}</a>
+        ) : (
+          ""
+        )}
       </ul>
     </FooterMenuContainer>
   );
