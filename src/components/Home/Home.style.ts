@@ -10,7 +10,7 @@ export const HomeWrapper = styled.div`
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     background-color: rgb(50, 50, 50);
     column-gap: 10px;
     div {
@@ -20,6 +20,9 @@ export const HomeWrapper = styled.div`
         letter-spacing: 2px;
         margin-bottom: 10px;
       }
+    }
+    @media (max-width: 1100px) {
+      grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
     }
   }
 `;
