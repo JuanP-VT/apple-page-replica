@@ -20,6 +20,9 @@ export const FooterContainer = styled.div`
     width: 80%;
     outline: 1px solid green;
     display: flex;
+    @media (max-width: 780px) {
+      flex-direction: column;
+    }
   }
   .forGamers {
     outline: 1px solid green;
@@ -30,7 +33,10 @@ export const FooterContainer = styled.div`
   }
 `;
 
-export const FooterMenuContainer = styled.div`
+type FooterMenuProps = {
+  ListIsToggled: boolean;
+};
+export const FooterMenuContainer = styled.div<FooterMenuProps>`
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -39,9 +45,14 @@ export const FooterMenuContainer = styled.div`
     color: #fff;
     cursor: pointer;
     margin-bottom: 20px;
+    pointer-events: none;
+    @media (max-width: 780px) {
+      pointer-events: all;
+    }
   }
   ul {
     list-style: none;
+    display: ${(props) => (props.ListIsToggled ? "inline" : "none")};
     li {
       color: #999;
     }

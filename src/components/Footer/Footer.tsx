@@ -10,6 +10,7 @@ function Footer() {
           <div className="links">
             <FooterMenu />
             <FooterMenu />
+            <FooterMenu />
           </div>
           <div className="forGamers">gamers</div>
         </div>
