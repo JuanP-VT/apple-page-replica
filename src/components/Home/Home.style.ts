@@ -8,6 +8,20 @@ export const HomeWrapper = styled.div`
   section {
     width: 100%;
   }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+    background-color: rgb(50, 50, 50);
+    column-gap: 10px;
+    div {
+      height: 570px;
+      h1 {
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 `;
 type Props = {
   backgroundImg: string;
@@ -22,12 +36,12 @@ export const HomeMainContainer = styled.div<Props>`
   color: white;
   background-image: url(${(props) => props.backgroundImg});
   background-position: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
   position: relative;
   border-bottom: 10px solid rgb(50, 50, 50);
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     font-weight: 300;
   }
@@ -38,7 +52,7 @@ export const HomeMainContainer = styled.div<Props>`
 `;
 export const ArrowLinkStyle = styled.a`
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: white;
   position: relative;
   font-weight: 300;
