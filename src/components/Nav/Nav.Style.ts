@@ -46,6 +46,11 @@ export const NavBox = styled.div<Props>`
       cursor: pointer;
     }
   }
+  @media (max-width: 1200px) {
+    #NavLinkList {
+      gap: 35px;
+    }
+  }
   @media (max-width: 970px) {
     #barsMenu {
       display: inline;
