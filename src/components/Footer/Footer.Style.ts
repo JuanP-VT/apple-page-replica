@@ -47,6 +47,7 @@ export const FooterContainer = styled.div`
     .icons {
       display: flex;
       justify-content: flex-end;
+      gap: 15px;
       a {
         img {
           height: 30px;

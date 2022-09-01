@@ -43,6 +43,9 @@ export const HomeMainContainer = styled.div<Props>`
   font-weight: 900;
   position: relative;
   border-bottom: 10px solid rgb(50, 50, 50);
+  h1 {
+    font-size: 3rem;
+  }
   h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
