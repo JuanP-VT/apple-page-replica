@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/razer-page-replica/static/js/main.d4aee0f6.js",
+    "main.js": "/razer-page-replica/static/js/main.e6345661.js",
     "static/media/HomeSeven.jpg": "/razer-page-replica/static/media/HomeSeven.a898110eea738111636a.jpg",
     "static/media/HomeTwo.jpg": "/razer-page-replica/static/media/HomeTwo.5a176872cd62999426f0.jpg",
     "static/media/HomeOne.jpg": "/razer-page-replica/static/media/HomeOne.79043eadfe4ead22b074.jpg",
@@ -12,9 +12,9 @@
     "static/media/HomeSix.jpg": "/razer-page-replica/static/media/HomeSix.334e9e4b6747f9099606.jpg",
     "static/media/razer-ths-logo.svg": "/razer-page-replica/static/media/razer-ths-logo.0d25071aa9e861bf55d7f240475a2ff1.svg",
     "index.html": "/razer-page-replica/index.html",
-    "main.d4aee0f6.js.map": "/razer-page-replica/static/js/main.d4aee0f6.js.map"
+    "main.e6345661.js.map": "/razer-page-replica/static/js/main.e6345661.js.map"
   },
   "entrypoints": [
-    "static/js/main.d4aee0f6.js"
+    "static/js/main.e6345661.js"
   ]
 }
