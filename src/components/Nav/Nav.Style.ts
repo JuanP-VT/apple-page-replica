@@ -35,18 +35,23 @@ export const NavBox = styled.div<Props>`
   @media (max-width: 970px) {
     #barsMenu {
       display: inline;
-      background-color: rgb(4, 4, 4);
+      color: rgb(200, 200, 200);
+      height: 20px;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+      }
     }
     #NavLinkList {
       position: absolute;
-      top: 70px;
+      top: 60px;
       flex-direction: column;
       width: 100%;
       background-color: rgb(0, 0, 0);
       justify-content: center;
+      padding-left: 50px;
       padding-top: 20px;
       display: ${(props) => (props.NavIsToggled ? "flex" : "none")};
-      padding-left: 50px;
       a {
         border-bottom: 1px solid grey;
         padding-bottom: 25px;
