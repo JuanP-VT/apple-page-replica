@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 type Props = {
   NavIsToggled: boolean;
 };
@@ -21,30 +22,10 @@ export const NavBox = styled.div<Props>`
     display: flex;
     gap: 80px;
     cursor: pointer;
-    p {
-      color: #888;
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 19px;
-      padding-top: 5px;
-      white-space: nowrap;
-      &:hover {
-        color: white;
-      }
-    }
   }
   img {
     height: 90%;
     cursor: pointer;
-  }
-  svg {
-    height: 40%;
-    color: #888;
-    padding-top: 5px;
-    &:hover {
-      color: white;
-      cursor: pointer;
-    }
   }
   @media (max-width: 1200px) {
     #NavLinkList {
@@ -66,10 +47,27 @@ export const NavBox = styled.div<Props>`
       padding-top: 20px;
       display: ${(props) => (props.NavIsToggled ? "flex" : "none")};
       padding-left: 50px;
-      p {
+      a {
         border-bottom: 1px solid grey;
         padding-bottom: 25px;
       }
     }
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  color: #888;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19px;
+  padding-top: 5px;
+  white-space: nowrap;
+  text-decoration: none;
+  img {
+    width: 35px;
+    height: 35px;
+  }
+  &:hover {
+    color: white;
   }
 `;

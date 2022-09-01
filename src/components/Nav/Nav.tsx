@@ -1,8 +1,8 @@
 import React from "react";
-import { NavBox } from "./Nav.Style";
+import { NavBox, StyledLink } from "./Nav.Style";
 import logo from "../../img/NavIMG/razer-ths-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 type Props = {
   NavIsToggled: boolean;
   setNavIsToggled: React.Dispatch<React.SetStateAction<boolean>>;
@@ -15,18 +15,19 @@ function Nav({ NavIsToggled, setNavIsToggled }: Props) {
         id="barsMenu"
         onClick={() => setNavIsToggled(!NavIsToggled)}
       />
-      <img src={logo} alt="logo" />
+      <StyledLink to="/">
+        <img src={logo} alt="logo" />
+      </StyledLink>
       <div id="NavLinkList">
-        <p>PC</p>
-        <p>Console</p>
-        <p>Mobile</p>
-        <p>Lifestyle</p>
-        <p> Services</p>
-        <p>Community</p>
-        <p>Support</p>
-        <p>Store</p>
+        <StyledLink to="/pc">PC</StyledLink>
+        <StyledLink to="/consoles">Console</StyledLink>
+        <StyledLink to="/mobile">Mobile</StyledLink>
+        <StyledLink to="lifestyle">Lifestyle</StyledLink>
+        <StyledLink to="services"> Services</StyledLink>
+        <StyledLink to="community">Community</StyledLink>
+        <StyledLink to="support">Support</StyledLink>
+        <StyledLink to="store">Store</StyledLink>
       </div>
-      <FontAwesomeIcon icon={faShoppingCart} />
     </NavBox>
   );
 }
