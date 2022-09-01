@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home/Home";
-import { AppContainer } from "./components/Nav/App.Style";
+import { AppContainer } from "./App.Style";
 import Nav from "./components/Nav/Nav";
 import { GlobalStyle } from "./GlobalStyle";
 
