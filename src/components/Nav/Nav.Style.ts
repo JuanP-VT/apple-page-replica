@@ -51,7 +51,10 @@ export const NavBox = styled.div<Props>`
       justify-content: center;
       padding-left: 50px;
       padding-top: 20px;
-      display: ${(props) => (props.NavIsToggled ? "flex" : "none")};
+      padding-bottom: 20px;
+      transform: ${(props) =>
+        props.NavIsToggled ? "translate(0)" : "translate(0,-1000px)"};
+      transition: all 300ms ease-in-out;
       a {
         border-bottom: 1px solid grey;
         padding-bottom: 25px;
