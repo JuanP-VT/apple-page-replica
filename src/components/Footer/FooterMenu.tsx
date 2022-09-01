@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FooterMenuContainer } from "./Footer.Style";
+import FooterLink from "./FooterLink";
 type Props = {
   label: string;
   linkOneText?: string;
@@ -60,114 +61,42 @@ function FooterMenu({
       <span onClick={() => setListIsToggled(!ListIsToggled)}>{label}</span>
       <ul>
         {linkOneText !== undefined ? (
-          <a
-            onClick={() => {
-              alert(
-                "You are leaving this page replica!, now heading to Razer original site"
-              );
-            }}
-            href={linkOneHref}
-          >
-            {linkOneText}
-          </a>
+          <FooterLink textContent={linkOneText} href={linkOneHref} />
         ) : (
           ""
         )}
         {linkTwoText !== undefined ? (
-          <a
-            onClick={() => {
-              alert(
-                "You are leaving this page replica!, now heading to Razer original site"
-              );
-            }}
-            href={linkTwoHref}
-          >
-            {linkTwoText}
-          </a>
+          <FooterLink textContent={linkTwoText} href={linkTwoHref} />
         ) : (
           ""
         )}
         {linkThreeText !== undefined ? (
-          <a
-            onClick={() => {
-              alert(
-                "You are leaving this page replica!, now heading to Razer original site"
-              );
-            }}
-            href={linkThreeHref}
-          >
-            {linkThreeText}
-          </a>
+          <FooterLink textContent={linkThreeText} href={linkThreeHref} />
         ) : (
           ""
         )}
         {linkFourText !== undefined ? (
-          <a
-            onClick={() => {
-              alert(
-                "You are leaving this page replica!, now heading to Razer original site"
-              );
-            }}
-            href={linkFourHref}
-          >
-            {linkFourText}
-          </a>
+          <FooterLink textContent={linkFourText} href={linkFourHref} />
         ) : (
           ""
         )}
         {linkFiveText !== undefined ? (
-          <a
-            onClick={() => {
-              alert(
-                "You are leaving this page replica!, now heading to Razer original site"
-              );
-            }}
-            href={linkFiveHref}
-          >
-            {linkFiveText}
-          </a>
+          <FooterLink textContent={linkFiveText} href={linkFiveHref} />
         ) : (
           ""
         )}
         {linkSixText !== undefined ? (
-          <a
-            onClick={() => {
-              alert(
-                "You are leaving this page replica!, now heading to Razer original site"
-              );
-            }}
-            href={linkSixHref}
-          >
-            {linkSixText}
-          </a>
+          <FooterLink textContent={linkSixText} href={linkSixHref} />
         ) : (
           ""
         )}
         {linkSevenText !== undefined ? (
-          <a
-            onClick={() => {
-              alert(
-                "You are leaving this page replica!, now heading to Razer original site"
-              );
-            }}
-            href={linkSevenHref}
-          >
-            {linkSevenText}
-          </a>
+          <FooterLink textContent={linkSevenText} href={linkSevenHref} />
         ) : (
           ""
         )}
         {linkEightText !== undefined ? (
-          <a
-            onClick={() => {
-              alert(
-                "You are leaving this page replica!, now heading to Razer original site"
-              );
-            }}
-            href={linkEightHref}
-          >
-            {linkEightText}
-          </a>
+          <FooterLink textContent={linkEightText} href={linkEightHref} />
         ) : (
           ""
         )}

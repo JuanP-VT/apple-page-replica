@@ -57,7 +57,6 @@ export const FooterMenuContainer = styled.div<FooterMenuProps>`
   display: flex;
   flex-direction: column;
   padding: 7px;
-  font-size: 12px;
   margin-top: 5px;
   margin-bottom: 20px;
   span {
@@ -72,12 +71,13 @@ export const FooterMenuContainer = styled.div<FooterMenuProps>`
   ul {
     list-style: none;
     display: ${(props) => (props.ListIsToggled ? "inline" : "none")};
-
-    a {
-      color: #999;
-      display: block;
-      text-decoration: none;
-      padding: 7px;
-    }
   }
+`;
+
+export const StyledFooterLink = styled.a`
+  color: #999;
+  display: block;
+  text-decoration: none;
+  padding: 7px;
+  font-size: 12px;
 `;

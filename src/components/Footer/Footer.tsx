@@ -4,6 +4,7 @@ import FooterMenu from "./FooterMenu";
 import fbIcon from "../../img/footerImg/SM0001-facebook.svg";
 import instaIcon from "../../img/footerImg/SM0003-instagram.svg";
 import twitterIcon from "../../img/footerImg/SM0005-twitter.svg";
+import FooterLink from "./FooterLink";
 function Footer() {
   return (
     <FooterContainer>
@@ -88,7 +89,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="legal">Legal</div>
+        <div className="legal">
+          <FooterLink textContent="Avion" href="www.google.com" />
+        </div>
       </div>
     </FooterContainer>
   );
