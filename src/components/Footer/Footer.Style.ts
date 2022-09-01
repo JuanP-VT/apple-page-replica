@@ -66,6 +66,34 @@ export const FooterContainer = styled.div`
   }
   .legal {
     height: 10%;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    small {
+      color: #999;
+      display: inline;
+      text-decoration: none;
+      padding: 7px;
+      font-size: 12px;
+      white-space: nowrap;
+      margin-right: 50px;
+    }
+    .anchor {
+      display: flex;
+      gap: 30px;
+      a {
+        p {
+          &::after {
+            content: "|";
+            display: inline;
+            margin-left: 30px;
+            font-weight: 900;
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
 `;
 

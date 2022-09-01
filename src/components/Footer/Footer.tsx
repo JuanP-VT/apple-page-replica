@@ -90,7 +90,25 @@ function Footer() {
           </div>
         </div>
         <div className="legal">
-          <FooterLink textContent="Avion" href="www.google.com" />
+          <small>Copyright © 2022 Razer Inc. All rights reserved.</small>
+          <div className="anchor">
+            <FooterLink
+              textContent="Site Map"
+              href="https://www.razer.com/sitemap"
+            />
+            <FooterLink
+              textContent="Legal Terms"
+              href="https://www.razer.com/legal"
+            />
+            <FooterLink
+              textContent="Privacy Policy"
+              href="https://www.razer.com/legal/customer-privacy-policy"
+            />
+            <FooterLink
+              textContent="Cookie Policy"
+              href="https://www.razer.com/legal/cookies"
+            />
+          </div>
         </div>
       </div>
     </FooterContainer>
