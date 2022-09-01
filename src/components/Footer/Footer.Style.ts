@@ -25,6 +25,25 @@ export const FooterContainer = styled.div`
   }
   .forGamers {
     width: 40%;
+    p {
+      padding-left: 50px;
+      color: #44d62c;
+      font-weight: 400;
+      text-align: end;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+      margin-top: 20px;
+    }
+    .icons {
+      display: flex;
+      justify-content: flex-end;
+      a {
+        img {
+          height: 30px;
+          margin-top: 10px;
+        }
+      }
+    }
   }
   .legal {
     height: 10%;

@@ -1,7 +1,9 @@
 import React from "react";
 import { FooterContainer } from "./Footer.Style";
 import FooterMenu from "./FooterMenu";
-
+import fbIcon from "../../img/footerImg/SM0001-facebook.svg";
+import instaIcon from "../../img/footerImg/SM0003-instagram.svg";
+import twitterIcon from "../../img/footerImg/SM0005-twitter.svg";
 function Footer() {
   return (
     <FooterContainer>
@@ -71,7 +73,20 @@ function Footer() {
               linkFiveHref="https://www.razer.com/contact-us"
             />
           </div>
-          <div className="forGamers">gamers</div>
+          <div className="forGamers">
+            <p>FOR GAMERS. BY GAMERS.™</p>
+            <div className="icons">
+              <a href="https://www.facebook.com/razerlatam/?brand_redir=13848807575">
+                <img src={fbIcon} alt="icon" />
+              </a>
+              <a href="https://www.instagram.com/razer/">
+                <img src={instaIcon} alt="icon" />
+              </a>
+              <a href="https://twitter.com/Razer">
+                <img src={twitterIcon} alt="icon" />
+              </a>
+            </div>
+          </div>
         </div>
         <div className="legal">Legal</div>
       </div>
