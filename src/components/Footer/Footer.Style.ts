@@ -4,16 +4,26 @@ export const FooterContainer = styled.div`
   background-color: #111;
   display: flex;
   justify-content: center;
+  @media (max-width: 880px) {
+    justify-content: space-between;
+  }
   .content {
     width: 70%;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
   }
   .main {
     height: 90%;
     display: flex;
     position: relative;
     border-bottom: 1px solid rgb(50, 50, 50);
+    @media (max-width: 780px) {
+      flex-direction: column;
+    }
   }
   .links {
     width: 60%;
@@ -44,6 +54,15 @@ export const FooterContainer = styled.div`
         }
       }
     }
+    @media (max-width: 780px) {
+      .icons {
+        justify-content: center;
+      }
+      p {
+        padding-left: 0px;
+      }
+      margin-bottom: 30px;
+    }
   }
   .legal {
     height: 10%;
@@ -64,8 +83,11 @@ export const FooterMenuContainer = styled.div<FooterMenuProps>`
     cursor: pointer;
     pointer-events: none;
     padding: 10px;
+    //Switch to mobile Nav at 780px
     @media (max-width: 780px) {
       pointer-events: all;
+      border-bottom: 1px solid grey;
+      width: 92vw;
     }
   }
   ul {
@@ -80,4 +102,5 @@ export const StyledFooterLink = styled.a`
   text-decoration: none;
   padding: 7px;
   font-size: 12px;
+  white-space: nowrap;
 `;
