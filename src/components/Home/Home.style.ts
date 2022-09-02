@@ -22,7 +22,7 @@ export const HomeWrapper = styled.div`
       }
     }
     @media (max-width: 1100px) {
-      grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+      grid-template-columns: auto;
     }
   }
 `;
@@ -39,7 +39,6 @@ export const HomeMainContainer = styled.div<Props>`
   color: white;
   background-image: url(${(props) => props.backgroundImg});
   background-position: center;
-  font-size: 2rem;
   font-weight: 900;
   position: relative;
   border-bottom: 10px solid rgb(50, 50, 50);
