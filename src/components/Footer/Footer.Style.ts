@@ -71,6 +71,14 @@ export const FooterContainer = styled.div`
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    @media screen and (max-width: 860px) {
+      flex-direction: column;
+      height: 80px;
+    }
+    @media screen and (max-width: 560px) {
+      height: 200px;
+      align-items: flex-start;
+    }
     small {
       color: #999;
       display: inline;
@@ -91,6 +99,18 @@ export const FooterContainer = styled.div`
             margin-left: 30px;
             font-weight: 900;
             font-size: 14px;
+          }
+        }
+      }
+      @media screen and (max-width: 560px) {
+        flex-direction: column;
+        gap: 0;
+        height: 100px;
+        a {
+          p {
+            &::after {
+              content: "";
+            }
           }
         }
       }
