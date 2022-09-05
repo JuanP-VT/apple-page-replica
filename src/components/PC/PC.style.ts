@@ -8,11 +8,20 @@ export const PCWrapper = styled.div`
 
 export const PCNavWrapper = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 35px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  justify-content: center;
 `;
 
 export const PCNavStyledLink = styled.a`
-  &:hover {
-    color: green;
+  text-decoration: none;
+  p {
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 400;
+    &:hover {
+      color: #44d62c;
+    }
   }
 `;
