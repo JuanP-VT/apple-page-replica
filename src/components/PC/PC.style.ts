@@ -16,10 +16,16 @@ export const PCNavWrapper = styled.div`
 export const PCMainWrapper = styled.div`
   display: flex;
   flex-direction: column;
+
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto auto;
     justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
   }
 `;
 export const PCNavStyledLink = styled.a`
@@ -71,6 +77,7 @@ export const GridContentWrapper = styled.div`
   flex-direction: column;
   min-width: 380px;
   max-width: 400px;
+  height: 500px;
   border-bottom: 2px solid #44d62c;
   background-color: #111;
   @media (max-width: 600px) {
@@ -80,6 +87,7 @@ export const GridContentWrapper = styled.div`
     height: 80%;
     img {
       width: 100%;
+      height: 100%;
     }
   }
   .bot {
@@ -95,7 +103,7 @@ export const GridContentWrapper = styled.div`
       font-size: 14px;
       line-height: 22px;
       color: #888;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
   }
 `;
