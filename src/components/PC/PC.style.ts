@@ -27,7 +27,7 @@ export const PCNavStyledLink = styled.a`
   }
 `;
 
-export const PCHeader = styled.div`
+export const PCHeaderWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,4 +50,9 @@ export const PCHeader = styled.div`
     line-height: 28px;
     padding: 20px;
   }
+`;
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
