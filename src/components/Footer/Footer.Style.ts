@@ -175,6 +175,7 @@ export const StyledFooterLink = styled.a`
     border: 2px solid transparent;
     &:hover {
       border-bottom: 2px solid grey;
+      color: #fff;
     }
   }
 `;
