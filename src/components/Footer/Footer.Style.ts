@@ -56,6 +56,7 @@ export const FooterContainer = styled.div`
       }
     }
     @media (max-width: 780px) {
+      height: 180px;
       .icons {
         justify-content: center;
       }
@@ -171,4 +172,13 @@ export const StyledFooterLink = styled.a`
   padding: 7px;
   font-size: 12px;
   white-space: nowrap;
+  margin-bottom: 2px;
+  width: 100%;
+  p {
+    display: inline-flex;
+    border: 2px solid transparent;
+    &:hover {
+      border-bottom: 2px solid grey;
+    }
+  }
 `;
