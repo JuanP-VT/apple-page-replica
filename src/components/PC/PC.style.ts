@@ -13,7 +13,15 @@ export const PCNavWrapper = styled.div`
   padding: 20px;
   justify-content: center;
 `;
-
+export const PCMainWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+`;
 export const PCNavStyledLink = styled.a`
   text-decoration: none;
   p {
