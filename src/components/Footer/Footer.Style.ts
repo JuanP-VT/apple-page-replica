@@ -93,14 +93,12 @@ export const FooterContainer = styled.div`
       display: flex;
       gap: 30px;
       a {
-        p {
-          &::after {
-            content: "|";
-            display: inline;
-            margin-left: 30px;
-            font-weight: 900;
-            font-size: 14px;
-          }
+        &::after {
+          content: "|";
+          display: inline;
+          margin-left: 30px;
+          font-weight: 900;
+          font-size: 14px;
         }
       }
       @media screen and (max-width: 560px) {
@@ -108,10 +106,8 @@ export const FooterContainer = styled.div`
         gap: 0;
         height: 100px;
         a {
-          p {
-            &::after {
-              content: "";
-            }
+          &::after {
+            content: "";
           }
         }
       }
