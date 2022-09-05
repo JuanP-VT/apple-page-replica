@@ -93,6 +93,39 @@ function PCMain({
         ) : (
           ""
         )}
+        {titleText4 ? (
+          <PcGridContent
+            imgSRC={imgSrc4}
+            titleText={titleText4}
+            descriptionText={descriptionText4}
+            linkText="Learn More"
+            linkHref={linkHref4}
+          />
+        ) : (
+          ""
+        )}
+        {titleText5 ? (
+          <PcGridContent
+            imgSRC={imgSrc5}
+            titleText={titleText5}
+            descriptionText={descriptionText5}
+            linkText="Learn More"
+            linkHref={linkHref5}
+          />
+        ) : (
+          ""
+        )}
+        {titleText6 ? (
+          <PcGridContent
+            imgSRC={imgSrc6}
+            titleText={titleText6}
+            descriptionText={descriptionText6}
+            linkText="Learn More"
+            linkHref={linkHref6}
+          />
+        ) : (
+          ""
+        )}
       </div>
     </PCMainWrapper>
   );
