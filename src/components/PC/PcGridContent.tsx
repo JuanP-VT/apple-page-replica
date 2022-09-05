@@ -1,5 +1,6 @@
 import React from "react";
 import { GridContentWrapper } from "./PC.style";
+import PCGridLink from "./PCGridLink";
 
 type Props = {
   imgSRC: string;
@@ -16,6 +17,10 @@ function PcGridContent({ imgSRC, titleText, descriptionText }: Props) {
       <div className="bot">
         <div className="title">{titleText}</div>
         <div className="description">{descriptionText}</div>
+        <PCGridLink
+          linkText="Learn More"
+          linkHref="https://www.razer.com/pc/gaming-laptops"
+        />
       </div>
     </GridContentWrapper>
   );

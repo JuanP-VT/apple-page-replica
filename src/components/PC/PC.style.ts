@@ -91,3 +91,9 @@ export const GridContentWrapper = styled.div`
     }
   }
 `;
+
+export const StyledGridLink = styled.a`
+  font-size: 14px;
+  text-decoration: none;
+  color: #44d62c;
+`;
