@@ -1,5 +1,6 @@
 import React from "react";
 import { PCWrapper } from "./PC.style";
+import PcGridContent from "./PcGridContent";
 import PCHeader from "./PCHeader";
 import PCNav from "./PCNav";
 
@@ -16,6 +17,7 @@ function PC() {
         productivity laptops, or go all-out for your build as you assemble the
         most powerful aRGB Chroma powered battlestation."
         />
+        <PcGridContent />
       </section>
     </PCWrapper>
   );

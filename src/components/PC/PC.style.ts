@@ -57,3 +57,37 @@ export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const GridContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-width: 380px;
+  max-width: 400px;
+  border: 2px solid green;
+  background-color: #111;
+  @media (max-width: 600px) {
+    min-width: 100%;
+  }
+  .top {
+    height: 80%;
+    img {
+      width: 100%;
+    }
+  }
+  .bot {
+    height: 20%;
+    padding: 10px;
+    .title {
+      font-size: 18px;
+      line-height: 22px;
+      color: #f4f4f4;
+      margin-bottom: 10px;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 22px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+  }
+`;
