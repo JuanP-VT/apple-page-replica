@@ -43,12 +43,13 @@ export const PCHeaderWrapper = styled.div`
     max-width: 1000px;
   }
   .content {
-    font-size: 18px;
+    font-size: 19px;
     color: #999;
     font-weight: 300;
     max-width: 1000px;
     line-height: 28px;
     padding: 20px;
+    text-align: center;
   }
 `;
 
