@@ -63,7 +63,7 @@ export const GridContentWrapper = styled.div`
   flex-direction: column;
   min-width: 380px;
   max-width: 400px;
-  border: 2px solid green;
+  border-bottom: 2px solid #44d62c;
   background-color: #111;
   @media (max-width: 600px) {
     min-width: 100%;
@@ -96,4 +96,9 @@ export const StyledGridLink = styled.a`
   font-size: 14px;
   text-decoration: none;
   color: #44d62c;
+  font-weight: 300;
+  margin-bottom: 20px;
+  &::after {
+    content: " > ";
+  }
 `;
