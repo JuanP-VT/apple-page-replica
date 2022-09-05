@@ -45,12 +45,25 @@ export const HomeMainContainer = styled.div<Props>`
   h1 {
     font-size: 3rem;
     text-align: center;
+    @media (max-width: 620px) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 420px) {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
   }
   h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     font-weight: 300;
     text-align: center;
+    @media (max-width: 620px) {
+      font-size: 1.1rem;
+    }
+    @media (max-width: 420px) {
+      font-size: 0.9rem;
+    }
   }
   .links {
     display: flex;
