@@ -132,6 +132,25 @@ export const FooterMenuContainer = styled.div<FooterMenuProps>`
     cursor: pointer;
     pointer-events: none;
     padding: 10px;
+    position: relative;
+    &:hover {
+      svg {
+        color: #fff;
+      }
+    }
+    svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      color: rgb(50, 50, 50);
+    }
+    .plusIcon {
+      display: ${(props) => (props.ListIsToggled ? "none" : "inline")};
+    }
+    .minusIcon {
+      display: ${(props) => (props.ListIsToggled ? "inline" : "none")};
+    }
     //Switch to mobile Nav at 780px
     @media (max-width: 780px) {
       pointer-events: all;

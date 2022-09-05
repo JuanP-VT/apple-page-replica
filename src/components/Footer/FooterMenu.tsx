@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { FooterMenuContainer } from "./Footer.Style";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+
 import FooterLink from "./FooterLink";
 type Props = {
   label: string;
@@ -58,7 +61,11 @@ function FooterMenu({
   }, []);
   return (
     <FooterMenuContainer ListIsToggled={ListIsToggled}>
-      <span onClick={() => setListIsToggled(!ListIsToggled)}>{label}</span>
+      <span onClick={() => setListIsToggled(!ListIsToggled)}>
+        <p>{label}</p>
+        <FontAwesomeIcon icon={faPlus} className="plusIcon" />
+        <FontAwesomeIcon icon={faMinus} className="minusIcon" />
+      </span>
       <ul>
         {linkOneText !== undefined ? (
           <FooterLink textContent={linkOneText} href={linkOneHref} />
