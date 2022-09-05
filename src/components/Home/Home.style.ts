@@ -44,11 +44,13 @@ export const HomeMainContainer = styled.div<Props>`
   border-bottom: 10px solid rgb(50, 50, 50);
   h1 {
     font-size: 3rem;
+    text-align: center;
   }
   h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     font-weight: 300;
+    text-align: center;
   }
   .links {
     display: flex;
