@@ -1,20 +1,21 @@
 import React from "react";
 import { GridContentWrapper } from "./PC.style";
 
-type Props = {};
+type Props = {
+  imgSRC: string;
+  titleText: string;
+  descriptionText: string;
+};
 
-function PcGridContent({}: Props) {
+function PcGridContent({ imgSRC, titleText, descriptionText }: Props) {
   return (
     <GridContentWrapper>
       <div className="top">
-        <img
-          src="https://assets2.razerzone.com/images/pnx.assets/381e915d58d2b9759725c30a9f2c3a0f/razer-blade-15-2022-laptop-500x500.jpg"
-          alt="pc"
-        />
+        <img src={imgSRC} alt="pc" />
       </div>
       <div className="bot">
-        <div className="title">LAPTOPS</div>
-        <div className="description">Sleek high-performance gaming laptops</div>
+        <div className="title">{titleText}</div>
+        <div className="description">{descriptionText}</div>
       </div>
     </GridContentWrapper>
   );

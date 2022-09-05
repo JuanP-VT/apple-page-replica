@@ -17,7 +17,11 @@ function PC() {
         productivity laptops, or go all-out for your build as you assemble the
         most powerful aRGB Chroma powered battlestation."
         />
-        <PcGridContent />
+        <PcGridContent
+          imgSRC="https://assets2.razerzone.com/images/pnx.assets/381e915d58d2b9759725c30a9f2c3a0f/razer-blade-15-2022-laptop-500x500.jpg"
+          titleText="LAPTOPS"
+          descriptionText="Sleek high-performance gaming laptops"
+        />
       </section>
     </PCWrapper>
   );
