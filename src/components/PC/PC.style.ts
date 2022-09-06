@@ -21,11 +21,23 @@ export const PCMainWrapper = styled.div`
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
+    height: 100%;
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     align-items: center;
     background-color: rgb(37, 37, 37);
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-around;
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
   }
 `;
 export const PCNavStyledLink = styled.a`
@@ -75,8 +87,7 @@ export const ContentWrapper = styled.div`
 export const GridContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  min-width: 380px;
-  max-width: 400px;
+  max-width: 500px;
   height: 500px;
   border-bottom: 2px solid #44d62c;
   background-color: #111;
@@ -84,14 +95,14 @@ export const GridContentWrapper = styled.div`
     min-width: 100%;
   }
   .top {
-    height: 80%;
+    height: 75%;
     img {
       width: 100%;
       height: 100%;
     }
   }
   .bot {
-    height: 20%;
+    height: 25%;
     padding: 10px;
     .title {
       font-size: 18px;
