@@ -5,18 +5,64 @@ export const PCWrapper = styled.div`
   flex-direction: column;
   padding-top: 60px;
 `;
-
-export const PCNavWrapper = styled.div`
+type NavWrap = {
+  listIsToggled: boolean;
+};
+export const PCNavWrapper = styled.div<NavWrap>`
   display: flex;
-  gap: 35px;
-  background-color: #1a1a1a;
-  padding: 20px;
-  justify-content: center;
+  @media (max-width: 1070px) {
+    flex-direction: column;
+  }
+  .links {
+    display: ${(props) => (props.listIsToggled ? "flex" : "none")};
+    gap: 35px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    @media (max-width: 1070px) {
+      flex-direction: column;
+      gap: 10px;
+      p {
+        border-bottom: 1px solid grey;
+        padding: 5px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  .toggle {
+    color: white;
+    padding: 10px;
+    display: none;
+    background-color: #1a1a1a;
+    align-items: center;
+    pointer-events: none;
+    &:hover {
+      svg {
+        color: white;
+      }
+    }
+    .icons {
+      display: relative;
+      margin-left: 20px;
+      color: grey;
+      .down {
+        display: ${(props) => (props.listIsToggled ? "none" : "inline")};
+      }
+      .up {
+        display: ${(props) => (props.listIsToggled ? "inline" : "none")};
+      }
+    }
+    @media (max-width: 1070px) {
+      display: flex;
+      pointer-events: all;
+      cursor: pointer;
+    }
+  }
 `;
 export const PCMainWrapper = styled.div`
   display: flex;
   flex-direction: column;
-
   .grid {
     display: grid;
     grid-template-columns: auto auto auto;
